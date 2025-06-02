@@ -1,7 +1,17 @@
+/* Paleta de Colores:
+   - #3A0CA3 (Púrpura Oscuro - Principal)
+   - #4361EE (Azul Vibrante - Secundario)
+   - #F72585 (Rosa Magenta - Acento)
+   - #25D366 (Verde WhatsApp)
+   - #F0F2F5 (Gris Claro para fondo)
+   - #FFFFFF (Blanco)
+   - #CED4DA (Gris Suave para texto o bordes)
+*/
+
 /* General Body Styles */
 body {
-    font-family: 'Montserrat', sans-serif; /* Usando la nueva fuente */
-    background: linear-gradient(135deg, #f0f2f5 0%, #e0e5ec 100%); /* Degradado de fondo suave */
+    font-family: 'Poppins', sans-serif; /* Nueva fuente */
+    background: linear-gradient(135deg, #f0f2f5 0%, #e0e5ec 100%); /* Degradado de fondo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,61 +20,61 @@ body {
     color: #333;
     text-align: center;
     line-height: 1.6;
-    padding: 20px; /* Padding general para el cuerpo */
-    box-sizing: border-box; /* Incluir padding en el tamaño total */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Main Container Styles */
 .main-container {
     background-color: #ffffff;
     padding: 40px;
-    border-radius: 12px; /* Bordes más redondeados */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
-    max-width: 450px; /* Ancho máximo ligeramente mayor */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    max-width: 480px; /* Ancho máximo ajustado */
     width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px; /* Espaciado entre elementos */
+    gap: 25px;
 }
 
 /* Logo Styles */
 .site-logo {
-    width: 150px; /* Tamaño del logo ajustado */
+    width: 160px; /* Tamaño del logo */
     height: auto;
-    margin-bottom: 15px; /* Espaciado con el título */
+    margin-bottom: 10px;
 }
 
 /* Main Title Styles */
 .main-title {
-    font-size: 2.6em; /* Tamaño de título un poco más grande */
-    color: #2c3e50;
-    margin-bottom: 0; /* Sin margen inferior */
+    font-size: 2.8em;
+    color: #3A0CA3; /* Púrpura Oscuro */
+    margin-bottom: 0;
     font-weight: 700;
-    letter-spacing: -0.5px; /* Ajuste de espaciado entre letras */
+    letter-spacing: -0.8px;
 }
 
 /* Tagline Styles */
 .tagline {
-    font-size: 1.2em; /* Tamaño de subtítulo */
-    color: #27ae60; /* Color verde vibrante */
+    font-size: 1.25em;
+    color: #4361EE; /* Azul Vibrante */
     font-weight: 600;
-    margin-top: 5px; /* Margen superior para separarlo del título */
+    margin-top: 5px;
     margin-bottom: 25px;
 }
 
 /* Promo Text Styles */
 .promo-text {
     font-size: 1.15em;
-    color: #e67e22; /* Color naranja distintivo */
+    color: #F72585; /* Rosa Magenta */
     font-weight: 700;
-    background-color: #fff0d9; /* Fondo suave para el texto de promoción */
-    padding: 12px 20px;
-    border-radius: 8px;
-    border: 1px dashed #d35400; /* Borde punteado */
+    background-color: #ffe0ed; /* Fondo suave que combina con el rosa */
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px dashed #F72585; /* Borde punteado del color de acento */
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 30px; /* Más espacio antes del botón */
 }
 
 /* CTA Button Styles */
@@ -73,72 +83,90 @@ body {
     align-items: center;
     background-color: #25d366; /* Verde WhatsApp */
     color: white;
-    padding: 18px 30px; /* Padding más generoso */
-    border-radius: 30px; /* Bordes más redondeados (pastilla) */
+    padding: 18px 32px;
+    border-radius: 35px; /* Más redondeado */
     text-decoration: none;
-    font-size: 1.3em; /* Tamaño de fuente más grande */
+    font-size: 1.35em; /* Tamaño de fuente más grande */
     font-weight: 700;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4); /* Sombra para el botón */
-    margin-top: 15px;
-    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    margin-bottom: 25px; /* Espacio después del botón */
 }
 
 .cta-button:hover {
-    background-color: #1da851; /* Verde más oscuro al pasar el mouse */
-    transform: translateY(-3px); /* Efecto de "levantamiento" */
-    box-shadow: 0 9px 20px rgba(37, 211, 102, 0.5);
+    background-color: #1da851;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(37, 211, 102, 0.55);
 }
 
 .cta-button i {
-    margin-right: 12px; /* Más espacio para el icono */
-    font-size: 1.4em; /* Tamaño del icono */
+    margin-right: 15px;
+    font-size: 1.5em;
 }
 
 /* Secondary Call to Action Styles */
 .secondary-call-to-action {
-    font-size: 1.05em;
-    color: #7f8c8d; /* Gris más suave */
+    font-size: 1.1em;
+    color: #CED4DA; /* Gris Suave */
     font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 30px; /* Más espacio antes de los beneficios */
 }
 
-/* Feature List Styles */
-.feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 30px 0; /* Más margen para la lista */
+/* Benefits Grid Styles */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 20px; /* Espaciado entre los ítems */
     width: 100%;
+}
+
+.benefit-item {
+    background-color: #F8F9FA; /* Fondo muy claro para los ítems */
+    padding: 25px; /* Más padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaciado entre elementos de la lista */
-}
-
-.feature-list li {
-    background-color: #ecf0f1; /* Fondo gris claro para los ítems */
-    padding: 15px 20px;
-    border-radius: 8px;
-    display: flex;
     align-items: center;
-    font-size: 1.05em;
-    color: #34495e; /* Color de texto más oscuro */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Sombra sutil */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
 }
 
-.feature-list li:hover {
-    transform: translateX(5px); /* Pequeño desplazamiento al pasar el mouse */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+.benefit-item:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background-color: #e0e5ec; /* Color ligeramente más oscuro al pasar el mouse */
 }
 
-.feature-list li i {
-    color: #3498db; /* Color azul para los iconos */
-    margin-right: 15px;
+.benefit-item i {
+    font-size: 3em; /* Iconos más grandes */
+    color: #3A0CA3; /* Púrpura Oscuro para los iconos */
+    margin-bottom: 15px;
+}
+
+.benefit-item-content h3 {
     font-size: 1.3em;
+    color: #3A0CA3; /* Púrpura Oscuro para los títulos de beneficios */
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.benefit-item-content p {
+    font-size: 0.95em;
+    color: #555; /* Gris oscuro para las descripciones */
+    margin: 0;
 }
 
 /* Responsive adjustments for smaller screens */
+@media (min-width: 600px) {
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más grandes */
+        gap: 25px;
+    }
+}
+
 @media (max-width: 600px) {
     .main-container {
         padding: 25px;
@@ -147,37 +175,49 @@ body {
     }
 
     .site-logo {
-        width: 120px;
+        width: 130px;
     }
 
     .main-title {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .tagline {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     .promo-text {
-        font-size: 1em;
-        padding: 10px 15px;
+        font-size: 1.05em;
+        padding: 12px 20px;
     }
 
     .cta-button {
         padding: 15px 25px;
-        font-size: 1.1em;
+        font-size: 1.15em;
     }
 
     .cta-button i {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
-    .feature-list li {
-        padding: 12px 15px;
-        font-size: 0.95em;
+    .secondary-call-to-action {
+        font-size: 1em;
     }
 
-    .feature-list li i {
-        font-size: 1.1em;
+    .benefit-item {
+        padding: 20px;
+    }
+
+    .benefit-item i {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .benefit-item-content h3 {
+        font-size: 1.15em;
+    }
+
+    .benefit-item-content p {
+        font-size: 0.9em;
     }
 }
