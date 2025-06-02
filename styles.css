@@ -1,23 +1,25 @@
-/* Paleta de Colores:
-   - #3A0CA3 (Púrpura Oscuro - Principal)
+/* Paleta de Colores para Modo Oscuro:
+   - #1A1A2E (Fondo Principal - Muy Oscuro)
+   - #2E3A4B (Fondo del Contenedor - Gris Azulado Oscuro)
+   - #E0E0E0 (Texto Principal - Gris Claro)
+   - #A0A0A0 (Texto Secundario - Gris Medio)
+   - #3A0CA3 (Púrpura Oscuro - Acento que contrasta) - Se mantiene de la versión clara para mantener la identidad.
    - #4361EE (Azul Vibrante - Secundario)
-   - #F72585 (Rosa Magenta - Acento)
+   - #F72585 (Rosa Magenta - Acento principal)
    - #25D366 (Verde WhatsApp)
-   - #F0F2F5 (Gris Claro para fondo)
-   - #FFFFFF (Blanco)
-   - #CED4DA (Gris Suave para texto o bordes)
+   - #0F0F1A (Sombra más profunda)
 */
 
 /* General Body Styles */
 body {
-    font-family: 'Poppins', sans-serif; /* Nueva fuente */
-    background: linear-gradient(135deg, #f0f2f5 0%, #e0e5ec 100%); /* Degradado de fondo */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1A1A2E 0%, #0F0F1A 100%); /* Degradado de fondo muy oscuro */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    color: #333;
+    color: #E0E0E0; /* Texto principal claro */
     text-align: center;
     line-height: 1.6;
     padding: 20px;
@@ -26,30 +28,33 @@ body {
 
 /* Main Container Styles */
 .main-container {
-    background-color: #ffffff;
+    background-color: #2E3A4B; /* Fondo del contenedor gris azulado oscuro */
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
-    max-width: 480px; /* Ancho máximo ajustado */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Sombra más oscura y pronunciada */
+    max-width: 480px;
     width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Borde sutil para definir el contenedor */
 }
 
 /* Logo Styles */
 .site-logo {
-    width: 160px; /* Tamaño del logo */
+    width: 160px;
     height: auto;
     margin-bottom: 10px;
+    /* Considerar si el logo necesita un ajuste para el modo oscuro,
+       por ejemplo, una versión más clara o un borde */
 }
 
 /* Main Title Styles */
 .main-title {
     font-size: 2.8em;
-    color: #3A0CA3; /* Púrpura Oscuro */
+    color: #4361EE; /* Azul Vibrante para el título */
     margin-bottom: 0;
     font-weight: 700;
     letter-spacing: -0.8px;
@@ -58,7 +63,7 @@ body {
 /* Tagline Styles */
 .tagline {
     font-size: 1.25em;
-    color: #4361EE; /* Azul Vibrante */
+    color: #F72585; /* Rosa Magenta para el tagline */
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 25px;
@@ -69,12 +74,12 @@ body {
     font-size: 1.15em;
     color: #F72585; /* Rosa Magenta */
     font-weight: 700;
-    background-color: #ffe0ed; /* Fondo suave que combina con el rosa */
+    background-color: rgba(247, 37, 133, 0.15); /* Fondo suave con transparencia del rosa */
     padding: 15px 25px;
     border-radius: 10px;
-    border: 2px dashed #F72585; /* Borde punteado del color de acento */
+    border: 2px dashed #F72585;
     margin-top: 15px;
-    margin-bottom: 30px; /* Más espacio antes del botón */
+    margin-bottom: 30px;
 }
 
 /* CTA Button Styles */
@@ -84,13 +89,13 @@ body {
     background-color: #25d366; /* Verde WhatsApp */
     color: white;
     padding: 18px 32px;
-    border-radius: 35px; /* Más redondeado */
+    border-radius: 35px;
     text-decoration: none;
-    font-size: 1.35em; /* Tamaño de fuente más grande */
+    font-size: 1.35em;
     font-weight: 700;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-    margin-bottom: 25px; /* Espacio después del botón */
+    margin-bottom: 25px;
 }
 
 .cta-button:hover {
@@ -107,47 +112,48 @@ body {
 /* Secondary Call to Action Styles */
 .secondary-call-to-action {
     font-size: 1.1em;
-    color: #CED4DA; /* Gris Suave */
+    color: #A0A0A0; /* Gris Medio para texto secundario */
     font-style: italic;
     margin-top: 0;
-    margin-bottom: 30px; /* Más espacio antes de los beneficios */
+    margin-bottom: 30px;
 }
 
 /* Benefits Grid Styles */
 .benefits-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Una columna por defecto */
-    gap: 20px; /* Espaciado entre los ítems */
+    grid-template-columns: 1fr;
+    gap: 20px;
     width: 100%;
 }
 
 .benefit-item {
-    background-color: #F8F9FA; /* Fondo muy claro para los ítems */
-    padding: 25px; /* Más padding */
+    background-color: #3A4750; /* Fondo más oscuro para los ítems de beneficio */
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más notoria */
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Borde sutil para los ítems */
 }
 
 .benefit-item:hover {
-    transform: translateY(-5px); /* Efecto de levantamiento */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    background-color: #e0e5ec; /* Color ligeramente más oscuro al pasar el mouse */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background-color: #4A5668; /* Color ligeramente más claro al pasar el mouse */
 }
 
 .benefit-item i {
-    font-size: 3em; /* Iconos más grandes */
-    color: #3A0CA3; /* Púrpura Oscuro para los iconos */
+    font-size: 3em;
+    color: #4361EE; /* Azul Vibrante para los iconos */
     margin-bottom: 15px;
 }
 
 .benefit-item-content h3 {
     font-size: 1.3em;
-    color: #3A0CA3; /* Púrpura Oscuro para los títulos de beneficios */
+    color: #E0E0E0; /* Blanco roto para los títulos de beneficios */
     margin-top: 0;
     margin-bottom: 8px;
     font-weight: 600;
@@ -155,14 +161,14 @@ body {
 
 .benefit-item-content p {
     font-size: 0.95em;
-    color: #555; /* Gris oscuro para las descripciones */
+    color: #A0A0A0; /* Gris medio para las descripciones */
     margin: 0;
 }
 
 /* Responsive adjustments for smaller screens */
 @media (min-width: 600px) {
     .benefits-grid {
-        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más grandes */
+        grid-template-columns: 1fr 1fr;
         gap: 25px;
     }
 }
