@@ -44,7 +44,7 @@ body {
 
 /* Logo Styles */
 .site-logo {
-    width: 160px;
+    width: 100px;
     height: auto;
     margin-bottom: 10px;
     /* Considerar si el logo necesita un ajuste para el modo oscuro,
