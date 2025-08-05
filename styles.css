@@ -71,11 +71,11 @@ body {
 
 /* Promo Text Styles (versión agrandada) */
 .promo-text {
-    font-size: 1.6em; /* Texto más grande */
+    font-size: 1.25em; /* Texto más grande */
     color: #F72585; /* Rosa Magenta */
     font-weight: 700;
     background-color: rgba(247, 37, 133, 0.15); /* Fondo suave con transparencia del rosa */
-    padding: 25px 35px; /* Más espacio alrededor del texto */
+    padding: 20px 30px; /* Más espacio alrededor del texto */
     border-radius: 12px;
     border: 2px dashed #F72585;
     margin-top: 20px;
